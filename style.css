@@ -135,6 +135,71 @@ hr {
   animation: spin 2s linear infinite;
 }
 
+.image-filter-layout .panel-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 14px;
+  padding: 18px;
+  margin-bottom: 12px;
+  backdrop-filter: blur(3px);
+}
+
+.image-filter-layout .panel-title {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.image-filter-layout canvas {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: #000;
+}
+
+.image-filter-layout .controls-card {
+  min-height: 100%;
+}
+
+.image-filter-layout .control-label {
+  display: block;
+  color: #fff;
+  font-size: 0.95rem;
+  margin: 0 0 8px;
+}
+
+.image-filter-layout .ui-select {
+  width: 100%;
+  color: white;
+  background: rgba(11, 10, 17, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  margin-bottom: 16px;
+  padding: 10px;
+}
+
+.image-filter-layout .kernel-help {
+  margin: 0 0 12px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.95rem;
+}
+
+.image-filter-layout .kernel-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.image-filter-layout .kernel-grid .kernel-inputs {
+  width: 100%;
+  margin: 0;
+  background: rgba(11, 10, 17, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  height: 42px;
+}
+
 @keyframes spin {
   0% {
       transform: rotate(0deg);
